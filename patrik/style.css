@@ -1,0 +1,143 @@
+:root {
+  --highlight: #34a5c7;  
+}
+html {
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+}
+
+body{
+  width:100%;
+  padding:0;
+  height:100%;
+  background: #181a1c;
+  color: white;
+}
+
+header {
+    background: url("img/snowfall.jpg") center center no-repeat;
+    background-size: cover;
+    height: 20vh;
+    display: flex;
+}
+
+h1 {
+  transition: 0.5s ease-in-out;
+}
+
+h1:hover {
+  text-shadow: var(--highlight) 1px 0 10px;
+  color: var(--highlight)
+}
+
+main h1:first-of-type {
+    font-weight: bold;
+}
+
+main {
+    font-family: 'Inter', sans-serif;
+}
+
+main > div:first-of-type {
+    margin-top: 5% !important;
+    margin-bottom: 5% !important;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-top: 5vh;
+}
+.flex-row {
+    flex-direction: row;
+}
+
+img.circle {
+    border-radius: 50%;
+    width: 100%;
+    height: auto;
+}
+
+hr {
+    border: 1px solid transparent;
+    width: 50%;
+    margin: 5vh auto;
+}
+
+.story {
+    background: #34a5c74f;
+    border: 2px dotted #1e6277;
+    border-radius: 25px;
+    padding: 1vh 1vw;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 1dvh 1vw;
+    margin-top: 5dvh;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: column;
+}
+
+footer > * {
+  width: 30%;
+  word-wrap: break-word;
+  margin-bottom: 0;
+}
+
+footer *:has(p) {
+  opacity: 0.2;
+}
+
+footer .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%
+}
+
+footer .legal p {
+  margin: 0;
+}
+
+footer hr {
+  width: 50%;
+  margin: 1dvh auto;
+}
+
+footer .links a {
+  color: #fff;
+  text-decoration: underline;
+  margin: 0;
+}
+
+footer .links a:hover {
+  color: var(--highlight);
+}
+
+@media screen and (max-width: 600px) {
+  footer {
+    flex-direction: column;
+  }
+  footer > * {
+    width: 100%;
+  }
+  footer hr {
+    width: 80%;
+  }
+  footer .links {
+    flex-direction: column;
+  }
+  footer .links a {
+    margin: 0.5dvh;
+  }
+}
